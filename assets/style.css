@@ -27,7 +27,7 @@ header {
 
 .highscore-style:hover {
     color: white;
-    background-color: pink;
+    background-color: plum;
     outline: none;
     border-radius: 10px;
 }
@@ -44,9 +44,7 @@ header {
     justify-content: center;
     flex: 1;
 }
-.container-wrapper {
-    display: none;
-}
+
 .display-text {
     display: flex;
     flex-wrap: wrap;
@@ -57,13 +55,19 @@ header {
 }
 .display-text h2 {
     font-size: 3vw;
-    border-bottom: 2px solid black;
+    border-bottom: 4px solid plum;
 }
 .display-text p {
     margin: 40px 100px;
     font-size: 1.5vw;
 }
 
+.feedback-answer {
+    color: slategrey;
+    font-size: 1.5vw;
+    padding: 20px 0;
+    border-top: 4px solid plum;
+}
 
 .quiz-question-style {
     font-size: 3vw;
@@ -74,13 +78,16 @@ header {
 }
 
 .answer-btn {
-    background-color: pink;
+    background-color: plum;
     font-size: 1.8vw;
     border-radius: 10px;
     outline: none;
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
 }
 .answer-btn:hover {
     color: white;
-    background-color: pink;
+    background-color: plum;
     outline: none;
 }
