@@ -17,15 +17,24 @@ header {
 }
 
 .highscore-style {
+    display: flex;
     color: pink;
-    font-size: 2vw;
-    margin-left: 20px;
+    font-size: 1.2vw;
+    outline: none;
+    background-color: cornflowerblue;
+    
 }
 
+.highscore-style:hover {
+    color: white;
+    background-color: pink;
+    outline: none;
+    border-radius: 10px;
+}
 .timer-style {
+    display: flex;
     color: black;
-    font-size: 2vw;
-    margin-right: 20px;
+    font-size: 1.2vw;
 }
 
 .page-content {
@@ -33,7 +42,28 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex: 1;
 }
+.container-wrapper {
+    display: none;
+}
+.display-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+.display-text h2 {
+    font-size: 3vw;
+    border-bottom: 2px solid black;
+}
+.display-text p {
+    margin: 40px 100px;
+    font-size: 1.5vw;
+}
+
 
 .quiz-question-style {
     font-size: 3vw;
@@ -44,10 +74,13 @@ header {
 }
 
 .answer-btn {
-    background-color: blueviolet;
+    background-color: pink;
     font-size: 1.8vw;
+    border-radius: 10px;
+    outline: none;
 }
 .answer-btn:hover {
     color: white;
     background-color: pink;
+    outline: none;
 }
