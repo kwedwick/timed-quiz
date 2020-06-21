@@ -7,41 +7,69 @@ var containerEl = document.getElementById("container-wrapper")
 var timer = 80;
 var highScore = [];
 var quizQuestions = [
-    {q: "How do you iterate a variable" }
+    { q: "How do you iterate a variable", a: "Onclick", c: "for loop", b: "function", d: "event"},
+    { q: "What is short for 'index'?", c: "i", a: "in", b: "dex", d: "ix"},
+    { q: "What is the measure of setInterval?", a: "deciseconds", d: "seconds", b: "nanoseconds", c: "miliseconds"},
+    { q: "How to add an element to HTML?", a: "addElement", d: "createElement", b: "suspendChild", c: "appendChild"},
+    { q: "What is an eventListener?", c: "Listens for Doms", a: "Nothing", b: "Let functions", d: "New variables"},
+    { q: "How to store information?", a: "storeItem", c: "setItem", b: "placeItem", d: "pushItem"},
+    { q: "What is an array?", a: "A function", b: "A style class", c: "contains data", d: "Pushes to Dom"}
 ];
 
 var createHighScoresPage = function () {
+    // need to recall stored information
 
+    // push to high score array
+
+    // push it to the page as a list (for loop?)
 };
 
 var inputQuizInfo = function () {
+    // create text for leader board
+
+    // create an input field that stores a text and value 
 
 };
 
-function timerCountdown () {
+// can I call to this function? 
+function countdown() {
     var timeleft = 80;
 
     // calling the timer countdown
-    var timeInterval = setInterval(function() {
+    var timeInterval = setInterval(function () {
         if (timeLeft > 0) {
             timeLeft--;
             timerEl.innerHTML = timeLeft
         }
-        else {
-            timerEl.innerHTML = 0;
+        else (timeLeft === 0) {
             clearInterval(timeInterval);
-            inputQuizInfo();
+            inputQuizInfo(); // clear contents and go to quiz leader board
         }
     }, 1000);
 };
 
 
 var startQuiz = function () {
-    
+    countdown(); // start countdown
+
+    // call question array and append the question to the DOM elements
+
+
+    // buttons that do on click
+
+
+    // check to see if the selected button was correct or wrong
+
+
+    // increase or decrease time based on answer
+
+    // check to see if there is still countdown to move to next question
+
+    // quiz function needs to end?
+
 };
 
-var createFrontPage = function() {
-
+var createFrontPage = function () {
     //creating main display
     var displayTextEl = document.createElement("div");
     displayTextEl.className = "display-text";
@@ -67,13 +95,20 @@ var createFrontPage = function() {
     startQuizBtn.setAttribute("onclick", startQuiz())
     displayTextEl.appendChild(startQuizBtn);
 
-    if (startQuizBtn = onclick) {
-        pageContentEl.remove();
-        startQuiz();
-    };
+    // how to know when clicking startQuiz button it transitions to the quiz?
+};
+
+// is this necessary?
+var saveHighScores = function () {
+
+};
+
+// is this necessary?
+var recallHighScores = function () {
+
 };
 
 
-
+//which eventlisteners am I missing?
 
 createFrontPage();
