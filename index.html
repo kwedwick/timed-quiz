@@ -8,14 +8,14 @@
     </head>
     <body>
         <header id="header-text" class="header-style">
-            <button class="highscore-style" id="highscore-id" type="submit">View High Scores</button>
-            <h2 class="timer-style" id="timer-id"></h2>
+            <button class="highscore-style" id="highscore-id" onclick="createHighScoresPage()" type="submit">View High Scores</button>
+            <h2 class="timer-style" value="timer" id="timer-id"></h2>
         </header>
         <main class="page-content" id="page-content">
             <section class="container-wrapper">
                 <h2 class="quiz-question-style" id="quiz-id"></h2>
                 <ol class="answer-style" id="answer-style"></ol>
-
+                <h2 id = "feedback-answer"></h2>
             </section>
         </main>
 
