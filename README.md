@@ -2,6 +2,10 @@
 
 Create a timed quiz only using Javascript
 
+https://kwedwick.github.io/timed-quiz/
+
+https://github.com/kwedwick/timed-quiz
+
 ## Table of Contents
 
 - [Planning](#planning)
@@ -31,4 +35,4 @@ There are a few issues that I cannot solve as I am struggling to understand Java
 
 Here is the screenshot of the main page
 
-![Image of completed webpage](./assets/final-screenshot)
+![Image of completed webpage](./assets/final-screenshot.jpg)
