@@ -37,6 +37,7 @@ function createHighScoresPage() {
     startAgainBtn.onclick = refreshPage;
     feedbackAnswerEl.appendChild(startAgainBtn);
 
+    // this technically not working
     highScore = localStorage.getItem("storedscores");
     if (highScore === null) {
         highScore = [];
@@ -92,7 +93,7 @@ var inputQuizInfo = function () {
     var inputInitials = document.createElement("input");
     inputInitials.setAttribute("placeholder", "Enter Name Here");
     //inputInitials.setAttribute("for", name)
-    inputInitials.setAttribute("value", name)
+    inputInitials.setAttribute("name", name)
     inputInitials.className = "answer-btn";
     inputInitials.type = "text";
     choiceListEl.appendChild(inputInitials);
